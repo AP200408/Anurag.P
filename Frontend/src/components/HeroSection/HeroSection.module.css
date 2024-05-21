@@ -1,0 +1,139 @@
+/* HeroSection.module.css */
+
+.profileBlob {
+  width: 175px;
+  height: 175px;
+  border-radius: 50% 70%;
+  clip-path: ellipse(50% 80% at 50% 50%);
+  overflow: hidden;
+  background-image: linear-gradient(135deg, #9D19E9, #BF30CC, #E1404D);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.profileBlob img {
+  width: 100%;
+  height: auto;
+}
+
+p span {
+  color: #7f00ff;
+  font-size: 1.5em;
+}
+
+.hero {
+  background-color: #faf5ff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  color: #333;
+  text-align: center;
+  background-image: url("../../assets/Background.png");
+  background-repeat: no-repeat;
+  flex-direction: column;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.blinkingCursor {
+  display: inline-block;
+  width: 8px;
+  /* Adjust size as needed */
+  height: 35px;
+  /* Adjust size as needed */
+  background-color: #333;
+  animation: blink 0.8s infinite;
+  margin-left: 2px;
+  /* Adjust spacing from the typed text */
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.hero-button {
+  background: linear-gradient(90deg, #e1404d, #d43a7d, #aa22de);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1.25em;
+  }
+
+  .hero-button {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .hero-button {
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,79 @@
+.sectionStyle {
+  padding: 50px 20px;
+  background-color: #faf5ff;
+  margin-bottom: 100px;
+  border-radius: 15px;
+}
+
+.titleStyle {
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+
+.titleStyle::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #f88378, #df2537);
+  display: block;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.carouselItemStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.projectCardStyle {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.projectCardStyle:hover {
+  cursor: pointer;
+}
+
+.controlIcon {
+  filter: invert(1);
+}
+
+@media (max-width: 768px) {
+  .projectCardStyle {
+    padding: 15px;
+  }
+
+  .titleStyle {
+    font-size: 1.5em;
+  }
+}
+
+.carousel-indicators {
+  bottom: 20px;
+}
+
+.carousel-indicators li {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #fff;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
